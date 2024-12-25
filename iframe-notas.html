@@ -1,0 +1,2211 @@
+<html><!--
+ Page saved with SingleFile 
+ url: https://academico.urp.edu.pe/evaluacionesweb/consultas/frmConsultaCursos.jsp 
+ saved date: Wed Dec 25 2024 09:44:53 GMT-0500 (hora estándar de Perú)
+-->
+<meta charset=utf-8>
+
+<head>
+  <title>Sistema de Consulta de Notas Web - Alumno</title>
+  <!-- Incluir CSS de MDB -->
+  <link href="https://cdn.jsdelivr.net/npm/mdb-ui-kit/css/mdb.min.css" rel="stylesheet" />
+  <!-- Incluir el JS de MDB (esto incluye Popper.js y Bootstrap) -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mdb-ui-kit/js/mdb.min.js"></script>
+
+  <script src="js/jquery-3.3.1.js"></script>
+  <link rel="stylesheet" href="css/mdb.min.css">
+</head>
+<style>
+  /*!
+ * MDB5
+ *   Version: FREE 4.3.0
+ * 
+ * 
+ *   Copyright: Material Design for Bootstrap
+ *   https://mdbootstrap.com/
+ * 
+ *   Read the license: https://mdbootstrap.com/general/license/
+ * 
+ * 
+ *   Documentation: https://mdbootstrap.com/docs/standard/
+ * 
+ *   Support: https://mdbootstrap.com/support/
+ * 
+ *   Contact: office@mdbootstrap.com
+ * 
+ */
+  :root {
+    --mdb-blue: #0d6efd;
+    --mdb-indigo: #6610f2;
+    --mdb-purple: #6f42c1;
+    --mdb-pink: #d63384;
+    --mdb-red: #dc3545;
+    --mdb-orange: #fd7e14;
+    --mdb-yellow: #ffc107;
+    --mdb-green: #198754;
+    --mdb-teal: #20c997;
+    --mdb-cyan: #0dcaf0;
+    --mdb-gray: #757575;
+    --mdb-gray-dark: #4f4f4f;
+    --mdb-gray-100: #f5f5f5;
+    --mdb-gray-200: #eee;
+    --mdb-gray-300: #e0e0e0;
+    --mdb-gray-400: #bdbdbd;
+    --mdb-gray-500: #9e9e9e;
+    --mdb-gray-600: #757575;
+    --mdb-gray-700: #616161;
+    --mdb-gray-800: #4f4f4f;
+    --mdb-gray-900: #262626;
+    --mdb-primary: #1266f1;
+    --mdb-secondary: #bdbdbd;
+    --mdb-success: #00b74a;
+    --mdb-info: #39c0ed;
+    --mdb-warning: #ffa900;
+    --mdb-danger: #f93154;
+    --mdb-light: #f9f9f9;
+    --mdb-dark: #262626;
+    --mdb-white: #fff;
+    --mdb-black: #000;
+    --mdb-primary-rgb: 18, 102, 241;
+    --mdb-secondary-rgb: 178, 60, 253;
+    --mdb-success-rgb: 0, 183, 74;
+    --mdb-info-rgb: 57, 192, 237;
+    --mdb-warning-rgb: 255, 169, 0;
+    --mdb-danger-rgb: 249, 49, 84;
+    --mdb-light-rgb: 249, 249, 249;
+    --mdb-dark-rgb: 38, 38, 38;
+    --mdb-white-rgb: 255, 255, 255;
+    --mdb-black-rgb: 0, 0, 0;
+    --mdb-body-color-rgb: 79, 79, 79;
+    --mdb-body-bg-rgb: 255, 255, 255;
+    --mdb-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --mdb-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --mdb-gradient: linear-gradient(180deg, hsla(0, 0%, 100%, 0.15), hsla(0, 0%, 100%, 0));
+    --mdb-body-font-family: var(--mdb-font-roboto);
+    --mdb-body-font-size: 1rem;
+    --mdb-body-font-weight: 400;
+    --mdb-body-line-height: 1.6;
+    --mdb-body-color: #4f4f4f;
+    --mdb-body-bg: #fff
+  }
+
+  *,
+  :after,
+  :before {
+    box-sizing: border-box
+  }
+
+  @media (prefers-reduced-motion:no-preference) {
+    :root {
+      scroll-behavior: smooth
+    }
+  }
+
+  body {
+    margin: 0;
+    font-size: var(--mdb-body-font-size);
+    font-weight: var(--mdb-body-font-weight);
+    text-align: var(--mdb-body-text-align);
+    background-color: var(--mdb-body-bg);
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+  }
+
+  h4,
+  h6 {
+    margin-top: 0;
+    margin-bottom: .5rem;
+    font-weight: 500;
+    line-height: 1.2
+  }
+
+  @media (min-width:1200px) {}
+
+  @media (min-width:1200px) {}
+
+  @media (min-width:1200px) {}
+
+  h4 {
+    font-size: calc(1.275rem + .3vw)
+  }
+
+  @media (min-width:1200px) {
+    h4 {
+      font-size: 1.5rem
+    }
+  }
+
+  h6 {
+    font-size: 1rem
+  }
+
+  b {
+    font-weight: bolder
+  }
+
+  table {
+    caption-side: bottom;
+    border-collapse: collapse
+  }
+
+  th {
+    text-align: inherit;
+    text-align: -webkit-match-parent
+  }
+
+  tbody,
+  td,
+  th,
+  thead,
+  tr {
+    border: 0 solid;
+    border-color: inherit
+  }
+
+  select {
+    margin: 0;
+    font-family: inherit;
+    line-height: inherit
+  }
+
+  select {
+    text-transform: none
+  }
+
+  select {
+    word-wrap: normal
+  }
+
+  select:disabled {
+    opacity: 1
+  }
+
+  @media (min-width:1200px) {}
+
+  ::-webkit-datetime-edit-day-field,
+  ::-webkit-datetime-edit-fields-wrapper,
+  ::-webkit-datetime-edit-hour-field,
+  ::-webkit-datetime-edit-minute,
+  ::-webkit-datetime-edit-month-field,
+  ::-webkit-datetime-edit-text,
+  ::-webkit-datetime-edit-year-field {
+    padding: 0
+  }
+
+  ::-webkit-inner-spin-button {
+    height: auto
+  }
+
+  /*!rtl:raw:
+[type="tel"],
+[type="url"],
+[type="email"],
+[type="number"] {
+  direction: ltr;
+}
+*/
+  ::-webkit-search-decoration {
+    -webkit-appearance: none
+  }
+
+  ::-webkit-color-swatch-wrapper {
+    padding: 0
+  }
+
+  ::-webkit-file-upload-button {
+    font: inherit;
+    -webkit-appearance: button
+  }
+
+  @media (min-width:1200px) {}
+
+  @media (min-width:1200px) {}
+
+  @media (min-width:1200px) {}
+
+  @media (min-width:1200px) {}
+
+  @media (min-width:1200px) {}
+
+  @media (min-width:1200px) {}
+
+  @media (min-width:576px) {}
+
+  @media (min-width:768px) {}
+
+  @media (min-width:992px) {}
+
+  @media (min-width:1200px) {}
+
+  @media (min-width:1400px) {}
+
+  @media (min-width:576px) {}
+
+  @media (min-width:768px) {}
+
+  @media (min-width:992px) {}
+
+  @media (min-width:1200px) {}
+
+  @media (min-width:1400px) {}
+
+  .table {
+    --mdb-table-bg: transparent;
+    --mdb-table-accent-bg: transparent;
+    --mdb-table-striped-color: #4f4f4f;
+    --mdb-table-striped-bg: rgba(0, 0, 0, 0.02);
+    --mdb-table-active-color: #4f4f4f;
+    --mdb-table-active-bg: rgba(0, 0, 0, 0.1);
+    --mdb-table-hover-color: #4f4f4f;
+    --mdb-table-hover-bg: rgba(0, 0, 0, 0.025);
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #4f4f4f;
+    vertical-align: top;
+    border-color: #e0e0e0
+  }
+
+  .table>:not(caption)>*>* {
+    background-color: var(--mdb-table-bg);
+    border-bottom-width: 1px;
+    box-shadow: inset 0 0 0 9999px var(--mdb-table-accent-bg)
+  }
+
+  .table>tbody {
+    vertical-align: inherit
+  }
+
+  .table>thead {
+    vertical-align: bottom
+  }
+
+  .table>:not(:first-child) {
+    border-top: 2px solid inherit
+  }
+
+  .table-hover>tbody>tr:hover>* {
+    --mdb-table-accent-bg: var(--mdb-table-hover-bg);
+    color: var(--mdb-table-hover-color)
+  }
+
+  @media (max-width:575.98px) {}
+
+  @media (max-width:767.98px) {}
+
+  @media (max-width:991.98px) {}
+
+  @media (max-width:1199.98px) {}
+
+  @media (max-width:1399.98px) {}
+
+  @media (prefers-reduced-motion:reduce) {}
+
+  @media (prefers-reduced-motion:reduce) {}
+
+  @media (prefers-reduced-motion:reduce) {}
+
+  @media (prefers-reduced-motion:reduce) {}
+
+  @media (prefers-reduced-motion:reduce) {}
+
+  @media (prefers-reduced-motion:reduce) {}
+
+  @media (prefers-reduced-motion:reduce) {}
+
+  @media (prefers-reduced-motion:reduce) {}
+
+  .btn {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out
+  }
+
+  @media (prefers-reduced-motion:reduce) {
+    .btn {
+      transition: none
+    }
+  }
+
+  .btn:hover {
+    color: #4f4f4f
+  }
+
+  .btn.disabled,
+  .btn:disabled,
+  fieldset:disabled .btn {
+    pointer-events: none;
+    opacity: .65
+  }
+
+  .btn-success {
+    border-color: #00b74a
+  }
+
+  .btn-check:focus+.btn-success,
+  .btn-success:focus,
+  .btn-success:hover {
+    color: #000;
+    background-color: #26c265;
+    border-color: #1abe5c
+  }
+
+  .btn-check:focus+.btn-success,
+  .btn-success:focus {
+    box-shadow: 0 0 0 .25rem rgba(0, 156, 63, .5)
+  }
+
+  .btn-check:active+.btn-success,
+  .btn-check:checked+.btn-success,
+  .btn-success.active,
+  .btn-success:active,
+  .show>.btn-success.dropdown-toggle {
+    color: #000;
+    background-color: #33c56e;
+    border-color: #1abe5c
+  }
+
+  .btn-check:active+.btn-success:focus,
+  .btn-check:checked+.btn-success:focus,
+  .btn-success.active:focus,
+  .btn-success:active:focus,
+  .show>.btn-success.dropdown-toggle:focus {
+    box-shadow: 0 0 0 .25rem rgba(0, 156, 63, .5)
+  }
+
+  .btn-success.disabled,
+  .btn-success:disabled {
+    color: #000;
+    border-color: #00b74a
+  }
+
+  .btn-outline-secondary:hover {
+    color: #000;
+    background-color: #bdbdbd;
+    border-color: #bdbdbd
+  }
+
+  .btn-check:focus+.btn-outline-secondary,
+  .btn-outline-secondary:focus {
+    box-shadow: 0 0 0 .25rem rgba(178, 60, 253, .5)
+  }
+
+  .btn-check:active+.btn-outline-secondary,
+  .btn-check:checked+.btn-outline-secondary,
+  .btn-outline-secondary.active,
+  .btn-outline-secondary.dropdown-toggle.show,
+  .btn-outline-secondary:active {
+    color: #000;
+    background-color: #bdbdbd;
+    border-color: #bdbdbd
+  }
+
+  .btn-check:active+.btn-outline-secondary:focus,
+  .btn-check:checked+.btn-outline-secondary:focus,
+  .btn-outline-secondary.active:focus,
+  .btn-outline-secondary.dropdown-toggle.show:focus,
+  .btn-outline-secondary:active:focus {
+    box-shadow: 0 0 0 .25rem rgba(178, 60, 253, .5)
+  }
+
+  .btn-outline-secondary.disabled,
+  .btn-outline-secondary:disabled {
+    background-color: transparent
+  }
+
+  .btn-sm {
+    border-radius: .2rem
+  }
+
+  .fade {
+    transition: opacity .15s linear
+  }
+
+  @media (prefers-reduced-motion:reduce) {
+    .fade {
+      transition: none
+    }
+  }
+
+  .fade:not(.show) {
+    opacity: 0
+  }
+
+  @media (prefers-reduced-motion:reduce) {}
+
+  @media (prefers-reduced-motion:reduce) {}
+
+  @media (min-width:576px) {}
+
+  @media (min-width:768px) {}
+
+  @media (min-width:992px) {}
+
+  @media (min-width:1200px) {}
+
+  @media (min-width:1400px) {}
+
+  @media (prefers-reduced-motion:reduce) {}
+
+  @media (prefers-reduced-motion:reduce) {}
+
+  @media (min-width:576px) {}
+
+  @media (min-width:768px) {}
+
+  @media (min-width:992px) {}
+
+  @media (min-width:1200px) {}
+
+  @media (min-width:1400px) {}
+
+  .card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border-radius: .5rem
+  }
+
+  .card-body {
+    flex: 1 1 auto;
+    padding: 1.5rem
+  }
+
+  .card-header {
+    padding: .75rem 1.5rem;
+    margin-bottom: 0
+  }
+
+  .card-header:first-child {
+    border-radius: calc(.5rem - 1px) calc(.5rem - 1px)0 0
+  }
+
+  .card-footer {
+    padding: .75rem 1.5rem
+  }
+
+  .card-footer:last-child {
+    border-radius: 0 0 calc(.5rem - 1px) calc(.5rem - 1px)
+  }
+
+  @media (min-width:576px) {}
+
+  @media (prefers-reduced-motion:reduce) {}
+
+  @media (prefers-reduced-motion:reduce) {}
+
+  @media (prefers-reduced-motion:reduce) {}
+
+  @-webkit-keyframes progress-bar-stripes {
+    0% {
+      background-position-x: 4px
+    }
+  }
+
+  @keyframes progress-bar-stripes {
+    0% {
+      background-position-x: 4px
+    }
+  }
+
+  @media (prefers-reduced-motion:reduce) {}
+
+  @media (prefers-reduced-motion:reduce) {}
+
+  @-webkit-keyframes placeholder-glow {
+    50% {
+      opacity: .2
+    }
+  }
+
+  @keyframes placeholder-glow {
+    50% {
+      opacity: .2
+    }
+  }
+
+  @-webkit-keyframes placeholder-wave {
+    to {
+      -webkit-mask-position: -200%0;
+      mask-position: -200%0
+    }
+  }
+
+  @keyframes placeholder-wave {
+    to {
+      -webkit-mask-position: -200%0;
+      mask-position: -200%0
+    }
+  }
+
+  @media (min-width:576px) {}
+
+  @media (min-width:768px) {}
+
+  @media (min-width:992px) {}
+
+  @media (min-width:1200px) {}
+
+  @media (min-width:1400px) {}
+
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1055;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    outline: 0
+  }
+
+  @media (prefers-reduced-motion:reduce) {}
+
+  @media (min-width:576px) {}
+
+  @media (min-width:992px) {}
+
+  @media (min-width:1200px) {}
+
+  @media (max-width:575.98px) {}
+
+  @media (max-width:767.98px) {}
+
+  @media (max-width:991.98px) {}
+
+  @media (max-width:1199.98px) {}
+
+  @media (max-width:1399.98px) {}
+
+  @media (prefers-reduced-motion:reduce) {}
+
+  /*!rtl:begin:ignore*/
+  /*!rtl:end:ignore*/
+  @media (prefers-reduced-motion:reduce) {}
+
+  @media (prefers-reduced-motion:reduce) {}
+
+  /*!rtl:options:{
+  "autoRename": true,
+  "stringMap":[ {
+    "name"    : "prev-next",
+    "search"  : "prev",
+    "replace" : "next"
+  } ]
+}*/
+  @media (prefers-reduced-motion:reduce) {}
+
+  @-webkit-keyframes spinner-border {
+    to {
+      transform: rotate(1turn)
+    }
+  }
+
+  @keyframes spinner-border {
+    to {
+      transform: rotate(1turn)
+    }
+  }
+
+  @-webkit-keyframes spinner-grow {
+    0% {
+      transform: scale(0)
+    }
+
+    50% {
+      opacity: 1;
+      transform: none
+    }
+  }
+
+  @keyframes spinner-grow {
+    0% {
+      transform: scale(0)
+    }
+
+    50% {
+      opacity: 1;
+      transform: none
+    }
+  }
+
+  @media (prefers-reduced-motion:reduce) {}
+
+  @media (prefers-reduced-motion:reduce) {}
+
+  @media (min-width:576px) {}
+
+  @media (min-width:768px) {}
+
+  @media (min-width:992px) {}
+
+  @media (min-width:1200px) {}
+
+  @media (min-width:1400px) {}
+
+  .d-flex {
+    display: flex !important
+  }
+
+  .border {
+    border: 1px solid #e0e0e0 !important
+  }
+
+  .justify-content-end {
+    justify-content: flex-end !important
+  }
+
+  .justify-content-between {
+    justify-content: space-between !important
+  }
+
+  .mx-2 {
+    margin-right: .5rem !important;
+    margin-left: .5rem !important
+  }
+
+  .mt-4 {
+    margin-top: 1.5rem !important
+  }
+
+  .p-3 {
+    padding: 1rem !important
+  }
+
+  .p-4 {
+    padding: 1.5rem !important
+  }
+
+  .fs-7 {
+    font-size: 0.75rem !important
+  }
+
+  .text-center {
+    text-align: center !important
+  }
+
+  /*!rtl:begin:remove*/
+  /*!rtl:end:remove*/
+  .text-white {
+    --mdb-text-opacity: 1;
+    color: rgba(var(--mdb-white-rgb), var(--mdb-text-opacity)) !important
+  }
+
+  .text-muted {
+    --mdb-text-opacity: 1;
+    color: #757575 !important
+  }
+
+  .bg-dark {
+    --mdb-bg-opacity: 1;
+    background-color: rgba(var(--mdb-dark-rgb), var(--mdb-bg-opacity)) !important
+  }
+
+  @media (min-width:576px) {}
+
+  @media (min-width:768px) {}
+
+  @media (min-width:992px) {}
+
+  @media (min-width:1200px) {}
+
+  @media (min-width:1400px) {}
+
+  @media (min-width:1200px) {}
+
+  :root {
+    --mdb-font-roboto: "Roboto", sans-serif;
+    --mdb-bg-opacity: 1
+  }
+
+  body {
+    font-family: var(--mdb-font-roboto);
+    line-height: 1.6;
+    color: #4f4f4f
+  }
+
+  @media (min-width:1199px) {}
+
+  .bg-dark {
+    background-color: rgba(38, 38, 38, var(--mdb-bg-opacity)) !important
+  }
+
+  /*!
+ * # Semantic UI 2.4.2 - Flag
+ * http://github.com/semantic-org/semantic-ui/
+ *
+ *
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+  .table {
+    font-size: .9rem
+  }
+
+  .table>:not(caption)>*>* {
+    padding: 1rem 1.4rem
+  }
+
+  .table th {
+    font-weight: 600
+  }
+
+  .table tbody {
+    font-weight: 400
+  }
+
+  .table>:not(:last-child)>:last-child>* {
+    border-bottom-color: inherit
+  }
+
+  .table-hover>tbody>tr {
+    transition: .5s
+  }
+
+  .table-hover>tbody>tr:hover {
+    --mdb-table-accent-bg: transparent;
+    background-color: var(--mdb-table-hover-bg)
+  }
+
+  .btn {
+    text-transform: uppercase;
+    vertical-align: bottom;
+    border: 0;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .2), 0 2px 10px 0 rgba(0, 0, 0, .1);
+    font-weight: 500
+  }
+
+  .btn.active,
+  .btn.active:focus,
+  .btn.focus,
+  .btn:active,
+  .btn:active:focus,
+  .btn:focus,
+  .btn:hover {
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, .2), 0 4px 20px 0 rgba(0, 0, 0, .1)
+  }
+
+  .btn.disabled,
+  .btn:disabled,
+  fieldset:disabled .btn {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .2), 0 2px 10px 0 rgba(0, 0, 0, .1);
+    border: 0
+  }
+
+  .btn-check:focus+.btn,
+  .btn:focus {
+    outline: 0;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, .2), 0 4px 20px 0 rgba(0, 0, 0, .1)
+  }
+
+  [class*=btn-outline-] {
+    border-width: .1rem;
+    border-style: solid;
+    box-shadow: none
+  }
+
+  [class*=btn-outline-].focus,
+  [class*=btn-outline-]:focus,
+  [class*=btn-outline-]:hover {
+    box-shadow: none;
+    text-decoration: none
+  }
+
+  [class*=btn-outline-].active,
+  [class*=btn-outline-].active:focus,
+  [class*=btn-outline-].disabled,
+  [class*=btn-outline-]:active,
+  [class*=btn-outline-]:active:focus,
+  [class*=btn-outline-]:disabled,
+  fieldset:disabled [class*=btn-outline-] {
+    box-shadow: none
+  }
+
+  [class*=btn-outline-].btn-sm {
+    padding: .25rem .875rem .1875rem
+  }
+
+  .btn-success {
+    color: #fff;
+    background-color: #00b74a
+  }
+
+  .btn-success.focus,
+  .btn-success:focus,
+  .btn-success:hover {
+    color: #fff;
+    background-color: #00913b
+  }
+
+  .btn-check:active+.btn-success,
+  .btn-check:checked+.btn-success,
+  .btn-success.active,
+  .btn-success:active,
+  .show>.btn-success.dropdown-toggle {
+    color: #fff;
+    background-color: #005121
+  }
+
+  .btn-check:active+.btn-success:focus,
+  .btn-check:checked+.btn-success:focus,
+  .btn-success.active:focus,
+  .btn-success:active:focus,
+  .show>.btn-success.dropdown-toggle:focus {
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, .2), 0 4px 20px 0 rgba(0, 0, 0, .1)
+  }
+
+  .btn-success.disabled,
+  .btn-success:disabled {
+    color: #fff;
+    background-color: #00b74a7a
+  }
+
+  .btn-outline-secondary {
+    color: #bdbdbd;
+    border-color: #bdbdbd
+  }
+
+  .btn-outline-secondary:hover {
+    color: #bdbdbd;
+    background-color: rgba(0, 0, 0, .02)
+  }
+
+  .btn-outline-secondary.active,
+  .btn-outline-secondary.dropdown-toggle.show,
+  .btn-outline-secondary.focus,
+  .btn-outline-secondary:active,
+  .btn-outline-secondary:focus {
+    color: #bdbdbd;
+    background-color: transparent
+  }
+
+  .btn-outline-secondary.active:focus,
+  .btn-outline-secondary.dropdown-toggle.show:focus,
+  .btn-outline-secondary:active:focus {
+    box-shadow: none
+  }
+
+  .btn-outline-secondary.disabled,
+  .btn-outline-secondary:disabled {
+    color: #bdbdbd
+  }
+
+  .btn-sm {
+    padding: .375rem 1rem .3125rem;
+    font-size: .75rem;
+    line-height: 1.5
+  }
+
+  @media (prefers-reduced-motion) {}
+
+  @-webkit-keyframes fade-in {
+    0% {
+      opacity: 0
+    }
+
+    to {
+      opacity: 1
+    }
+  }
+
+  @keyframes fade-in {
+    0% {
+      opacity: 0
+    }
+
+    to {
+      opacity: 1
+    }
+  }
+
+  @-webkit-keyframes fade-out {
+    0% {
+      opacity: 1
+    }
+
+    to {
+      opacity: 0
+    }
+  }
+
+  @keyframes fade-out {
+    0% {
+      opacity: 1
+    }
+
+    to {
+      opacity: 0
+    }
+  }
+
+  .card {
+    border: 0;
+    box-shadow: 0 2px 15px -3px rgba(0, 0, 0, .07), 0 10px 20px -2px rgba(0, 0, 0, .04)
+  }
+
+  .card-header {
+    background-color: hsla(0, 0%, 100%, 0);
+    border-bottom: 1px solid #f5f5f5
+  }
+
+  .card-footer {
+    background-color: hsla(0, 0%, 100%, 0);
+    border-top: 2px solid #f5f5f5
+  }
+
+  .custom-select {
+    padding: 0.375rem 2.25rem 0.375rem 0.75rem;
+    -moz-padding-start: calc(0.75rem - 3px);
+    background-position: right 0.75rem center;
+    background-size: 16px 12px;
+    border: 1px solid #c3c8cd;
+    border-radius: 0.25rem;
+    font-size: 14px
+  }
+</style>
+<style>
+  INPUT:-webkit-autofill,
+  SELECT:-webkit-autofill,
+  TEXTAREA:-webkit-autofill {
+    animation-name: onautofillstart
+  }
+
+  INPUT:not(:-webkit-autofill),
+  SELECT:not(:-webkit-autofill),
+  TEXTAREA:not(:-webkit-autofill) {
+    animation-name: onautofillcancel
+  }
+
+  @keyframes onautofillstart {}
+
+  @keyframes onautofillcancel {}
+</style>
+<meta name=referrer content=no-referrer>
+<link rel=canonical href=https://academico.urp.edu.pe/evaluacionesweb/consultas/frmConsultaCursos.jsp>
+<meta http-equiv=content-security-policy
+  content="default-src 'none'; font-src 'self' data:; img-src 'self' data:; style-src 'unsafe-inline'; media-src 'self' data:; script-src 'unsafe-inline' data:; object-src 'self' data:; frame-src 'self' data:;">
+</head>
+
+<body class=p-4 style=background:rgb(248,249,250)>
+  <div class="card border bg-dark p-3 text-white">
+    <div class="d-flex justify-content-between">
+      <h4>Sistema de Registro de Evaluaciones</h4>
+      <h6> KATHERINE BRIGITH LINDO VILLAR</h6>
+    </div>
+  </div>
+  <div class="card border mt-4">
+    <div class="card-header d-flex justify-content-between">
+      <b>Cursos Disponibles</b>
+      <div class=d-flex> <span class="text-muted mx-2" style=align-self:center>semestre: </span>
+        <select class="custom-select cmb-semestre" autocompleted>
+          <option value="20242" selected>2024-2</option>
+          <option value="20241">2024-1</option>
+      </select>
+      </div>
+    </div>
+    <div class=card-body style=overflow-x:auto>
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th width=65 height=30>Código</th>
+            <th width=220>Carrera</th>
+            <th width=70>Currículo</th>
+            <th width=236>Nombre</th>
+            <th width=65>Grupo</th>
+            <th width=90 class=text-center>Ver</th>
+          </tr>
+        </thead>
+        <tbody id="tbodyCursos">
+        </tbody>
+      </table>
+    </div>
+    <div class="card-footer d-flex justify-content-end">
+      <h7>
+        <i class="text-muted fs-7">
+          © OFICIC - Universidad Ricardo Palma Copyright ® | Todos los derechos reservados
+        </i>
+      </h7>
+    </div>
+  </div>
+  <div class="modal fade" id=modalWindow1 tabindex=-1 aria-labelledby=modalWindowLabel data-mdb-backdrop=static
+    data-mdb-keyboard=false aria-hidden=true>
+    <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="modalWindowLabel">Nota del Curso: Diseño Arquitectónico III Integral 07</h5>
+              <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body px-4">
+              <table class="table table-hover">
+                  <thead>
+                      <tr>
+                          <th class="w-50">Descripción de Evaluación</th>
+                          <th class="w-25">Prefijo</th>
+                          <th class="w-25">Nota</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td>Trabajo de Investigación</td>
+                          <td>TRA1</td>
+                          <td>16</td>
+                      </tr>    
+                      <tr>
+                          <td>Proyecto Taller</td>
+                          <td>PYT1</td>
+                          <td>15</td>
+                      </tr>    
+                      <tr>
+                          <td>Avance del Proyecto</td>
+                          <td>AVP1</td>
+                          <td>12</td>
+                      </tr>    
+                      <tr>
+                          <td>Promedio Final</td>
+                          <td>PROMFINAL</td>
+                          <td>14</td>
+                      </tr>    
+                      <tr>
+                          <td>Proyecto Final</td>
+                          <td>PYF1</td>
+                          <td>14</td>
+                      </tr>    
+                  </tbody>
+              </table>
+              <p><b>Fórmula:</b></p>
+              <p>(TRA1 + PYT1 * 2 + AVP1 * 3 + PYF1 * 4) / 10</p>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-success" data-mdb-dismiss="modal">Cerrar</button>
+          </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id=modalWindow2 tabindex=-1 aria-labelledby=modalWindowLabel data-mdb-backdrop=static
+    data-mdb-keyboard=false aria-hidden=true>
+    <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="modalWindowLabel">Nota del Curso: Expresión Arquitectónica II 02</h5>
+            <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body px-4">
+
+
+
+
+
+
+
+
+<table class="table table-hover">
+    <thead>
+    <tr>
+        <th width="428" height="30">&nbsp;Descripción de Evaluación</th>
+        <th width="161">&nbsp;Prefijo</th>
+        <th width="161">&nbsp;Nota</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+            <tr>
+                <td height="30">Lamina</td>
+                <td>LAM1</td>
+                <td>14</td>
+            </tr>    
+        
+            <tr>
+                <td height="30">Lamina</td>
+                <td>LAM2</td>
+                <td>16</td>
+            </tr>    
+        
+            <tr>
+                <td height="30">Promedio Final</td>
+                <td>PROMFINAL</td>
+                <td>14</td>
+            </tr>    
+        
+            <tr>
+                <td height="30">Informe Final</td>
+                <td>INF1</td>
+                <td>13</td>
+            </tr>    
+        
+    </tbody>
+</table>
+    <h7><b>Fórmula:</b></h7><br>
+<h7>(LAM1+LAM2*2+INF1*4)/7</h7>
+
+</div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-success" data-mdb-dismiss="modal">Cerrar</button>
+        </div>
+    </div>
+    </div>
+  </div>
+  <div class="modal fade" id=modalWindow3 tabindex=-1 aria-labelledby=modalWindowLabel data-mdb-backdrop=static
+    data-mdb-keyboard=false aria-hidden=true>
+    <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="modalWindowLabel">Nota del Curso: Diseño Arquitectónico III Integral 10</h5>
+            <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body px-4">
+
+
+
+
+
+
+
+
+<table class="table table-hover">
+    <thead>
+    <tr>
+        <th width="428" height="30">&nbsp;Descripción de Evaluación</th>
+        <th width="161">&nbsp;Prefijo</th>
+        <th width="161">&nbsp;Nota</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+            <tr>
+                <td height="30">Taller</td>
+                <td>TLR1</td>
+                <td>07</td>
+            </tr>    
+        
+            <tr>
+                <td height="30">Taller</td>
+                <td>TLR2</td>
+                <td>00</td>
+            </tr>    
+        
+            <tr>
+                <td height="30">Taller</td>
+                <td>TLR3</td>
+                <td>00</td>
+            </tr>    
+        
+            <tr>
+                <td height="30">Taller</td>
+                <td>TLR4</td>
+                <td>00</td>
+            </tr>    
+        
+            <tr>
+                <td height="30">Promedio Final</td>
+                <td>PROMFINAL</td>
+                <td>01</td>
+            </tr>    
+        
+    </tbody>
+</table>
+    <h7><b>Fórmula:</b></h7><br>
+<h7>(TLR1+TLR2*2+TLR3*3+TLR4*4)/10</h7>
+
+</div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-success" data-mdb-dismiss="modal">Cerrar</button>
+        </div>
+    </div>
+    </div>
+  </div>
+  <div class="modal fade" id=modalWindow4 tabindex=-1 aria-labelledby=modalWindowLabel data-mdb-backdrop=static
+    data-mdb-keyboard=false aria-hidden=true>
+    <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="modalWindowLabel">Nota del Curso: Expresión Arquitectónica II 01</h5>
+            <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body px-4">
+
+
+
+
+
+
+
+
+<table class="table table-hover">
+    <thead>
+    <tr>
+        <th width="428" height="30">&nbsp;Descripción de Evaluación</th>
+        <th width="161">&nbsp;Prefijo</th>
+        <th width="161">&nbsp;Nota</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+            <tr>
+                <td height="30">Práctica Teórica</td>
+                <td>PRT1</td>
+                <td>01</td>
+            </tr>    
+        
+            <tr>
+                <td height="30">Avance del Proyecto</td>
+                <td>AVP1</td>
+                <td>00</td>
+            </tr>    
+        
+            <tr>
+                <td height="30">Avance del Proyecto</td>
+                <td>AVP2</td>
+                <td>00</td>
+            </tr>    
+        
+            <tr>
+                <td height="30">Promedio Final</td>
+                <td>PROMFINAL</td>
+                <td>00</td>
+            </tr>    
+        
+            <tr>
+                <td height="30">Proyecto Final</td>
+                <td>PYF1</td>
+                <td>00</td>
+            </tr>    
+        
+    </tbody>
+</table>
+    <h7><b>Fórmula:</b></h7><br>
+<h7>(PRT1*1+AVP1*2+AVP2*2+PYF1*3)/8</h7>
+
+</div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-success" data-mdb-dismiss="modal">Cerrar</button>
+        </div>
+    </div>
+    </div>
+  </div>
+  <div class="modal fade" id=modalWindow5 tabindex=-1 aria-labelledby=modalWindowLabel data-mdb-backdrop=static
+    data-mdb-keyboard=false aria-hidden=true>
+    <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="modalWindowLabel">Nota del Curso: Estructuras I 04</h5>
+            <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body px-4">
+
+
+
+
+
+
+
+
+<table class="table table-hover">
+    <thead>
+    <tr>
+        <th width="428" height="30">&nbsp;Descripción de Evaluación</th>
+        <th width="161">&nbsp;Prefijo</th>
+        <th width="161">&nbsp;Nota</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+            <tr>
+                <td height="30">Proyecto Taller</td>
+                <td>PYT1</td>
+                <td>00</td>
+            </tr>    
+        
+            <tr>
+                <td height="30">Proyecto Taller</td>
+                <td>PYT2</td>
+                <td>00</td>
+            </tr>    
+        
+            <tr>
+                <td height="30">Proyecto Taller</td>
+                <td>PYT3</td>
+                <td>00</td>
+            </tr>    
+        
+            <tr>
+                <td height="30">Promedio Final</td>
+                <td>PROMFINAL</td>
+                <td>99</td>
+            </tr>    
+        
+            <tr>
+                <td height="30">Proyecto Final</td>
+                <td>PYF1</td>
+                <td>00</td>
+            </tr>    
+        
+    </tbody>
+</table>
+    <h7><b>Fórmula:</b></h7><br>
+<h7>(PYT1+PYT2+PYT3+PYF1)/4</h7>
+
+</div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-success" data-mdb-dismiss="modal">Cerrar</button>
+        </div>
+    </div>
+    </div>
+  </div>
+  <div class="modal fade" id=modalWindow6 tabindex=-1 aria-labelledby=modalWindowLabel data-mdb-backdrop=static
+    data-mdb-keyboard=false aria-hidden=true>
+    <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="modalWindowLabel">Nota del Curso: Edificación I 04</h5>
+            <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body px-4">
+
+
+
+
+
+
+
+
+<table class="table table-hover">
+    <thead>
+    <tr>
+        <th width="428" height="30">&nbsp;Descripción de Evaluación</th>
+        <th width="161">&nbsp;Prefijo</th>
+        <th width="161">&nbsp;Nota</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+            <tr>
+                <td height="30">Sustitutorio</td>
+                <td>SUS1</td>
+                <td>88</td>
+            </tr>    
+        
+            <tr>
+                <td height="30">Práctica</td>
+                <td>PRA1</td>
+                <td>00</td>
+            </tr>    
+        
+            <tr>
+                <td height="30">Práctica</td>
+                <td>PRA2</td>
+                <td>07</td>
+            </tr>    
+        
+            <tr>
+                <td height="30">Práctica</td>
+                <td>PRA3</td>
+                <td>00</td>
+            </tr>    
+        
+            <tr>
+                <td height="30">Práctica</td>
+                <td>PRA4</td>
+                <td>00</td>
+            </tr>    
+        
+            <tr>
+                <td height="30">Práctica</td>
+                <td>PRA5</td>
+                <td>14</td>
+            </tr>    
+        
+            <tr>
+                <td height="30">Trabajo de Investigación</td>
+                <td>TRA1</td>
+                <td>00</td>
+            </tr>    
+        
+            <tr>
+                <td height="30">Promedio Final</td>
+                <td>PROMFINAL</td>
+                <td>06</td>
+            </tr>    
+        
+    </tbody>
+</table>
+    <h7><b>Fórmula:</b></h7><br>
+<h7>(TRA1+PRA1+PRA2*3+PRA3+PRA4+PRA5*3)/10</h7>
+
+</div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-success" data-mdb-dismiss="modal">Cerrar</button>
+        </div>
+    </div>
+    </div>
+  </div>
+  <div class="modal fade" id=modalWindow7 tabindex=-1 aria-labelledby=modalWindowLabel data-mdb-backdrop=static
+    data-mdb-keyboard=false aria-hidden=true>
+    <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="modalWindowLabel">Nota del Curso: Urbanismo I 03</h5>
+            <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body px-4">
+
+
+
+
+
+
+
+
+<table class="table table-hover">
+    <thead>
+    <tr>
+        <th width="428" height="30">&nbsp;Descripción de Evaluación</th>
+        <th width="161">&nbsp;Prefijo</th>
+        <th width="161">&nbsp;Nota</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+            <tr>
+                <td height="30">Parcial</td>
+                <td>PAR1</td>
+                <td>03</td>
+            </tr>    
+        
+            <tr>
+                <td height="30">Final</td>
+                <td>FIN1</td>
+                <td>00</td>
+            </tr>    
+        
+            <tr>
+                <td height="30">Trabajo Práctico</td>
+                <td>TRP1</td>
+                <td>05</td>
+            </tr>    
+        
+            <tr>
+                <td height="30">Trabajo Práctico</td>
+                <td>TRP2</td>
+                <td>01</td>
+            </tr>    
+        
+            <tr>
+                <td height="30">Trabajo Práctico</td>
+                <td>TRP3</td>
+                <td>00</td>
+            </tr>    
+        
+            <tr>
+                <td height="30">Trabajo Práctico</td>
+                <td>TRP4</td>
+                <td>00</td>
+            </tr>    
+        
+            <tr>
+                <td height="30">Nota Participación</td>
+                <td>NPA1</td>
+                <td>00</td>
+            </tr>    
+        
+            <tr>
+                <td height="30">Promedio Final</td>
+                <td>PROMFINAL</td>
+                <td>01</td>
+            </tr>    
+        
+    </tbody>
+</table>
+    <h7><b>Fórmula:</b></h7><br>
+<h7>((TRP1*1)+(TRP2*2)+(PAR1*3)+(TRP3*1)+(TRP4*2)+(FIN1*3)+(NPA1*1))/13</h7>
+
+</div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-success" data-mdb-dismiss="modal">Cerrar</button>
+        </div>
+    </div>
+    </div>
+  </div>
+  <div class="modal fade" id=modalWindowCronograma1 tabindex=-1 aria-labelledby=modalWindowLabel data-mdb-backdrop=static
+    data-mdb-keyboard=false aria-hidden=true>
+    <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="modalWindowLabel">Cronograma del Curso: Diseño Arquitectónico III Integral 07</h5>
+            <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body px-4">
+
+
+
+
+
+
+
+<table class="table table-hover">
+<thead>
+<tr>
+<th width="60" height="30">&nbsp;Prefijo</th>
+<th width="170">&nbsp;Evaluación</th>
+<th width="170">&nbsp;Fecha Evaluación</th>
+<th width="170">&nbsp;Posible Eliminación</th>
+<th width="170">&nbsp;Evaluación Reemplazo</th>
+</tr>
+</thead>
+
+
+<tbody><tr>
+    <td height="30">TRA1</td>
+    <td>Trabajo de Investigación</td>
+    <td>18/09/2024</td>
+    <td>N</td>
+    <td>Ninguna</td>
+</tr>     
+
+<tr>
+    <td height="30">PYT1</td>
+    <td>Proyecto Taller</td>
+    <td>21/10/2024</td>
+    <td>N</td>
+    <td>Ninguna</td>
+</tr>     
+
+<tr>
+    <td height="30">AVP1</td>
+    <td>Avance del Proyecto</td>
+    <td>25/11/2024</td>
+    <td>N</td>
+    <td>Ninguna</td>
+</tr>     
+
+<tr>
+    <td height="30">PYF1</td>
+    <td>Proyecto Final</td>
+    <td>18/12/2024</td>
+    <td>N</td>
+    <td>Ninguna</td>
+</tr>     
+
+
+</tbody></table>
+
+<div class="px-2">
+<h7><b>Fórmula:</b></h7><br>
+<h7 class="px-3">(TRA1+PYT1*2+AVP1*3+PYF1*4)/10</h7>
+</div>
+
+<div class="px-2">
+<h7><b>Leyenda:</b></h7>
+</div>
+<table class="table table-borderless table-sm ">
+<tbody>
+<tr>
+<td width="20%" height="30">&nbsp;Nº Eval a eliminar</td>
+<td>:</td>
+<td width="80%">&nbsp;Número de evaluaciones del mismo tipo que se eliminarán</td>
+</tr>
+<tr>
+<td height="30">&nbsp;Posible Eliminación</td>
+<td>:</td>
+<td>&nbsp;(S) Indica la ubicación de las evaluaciones posibles a eliminarse.
+</td>
+</tr>
+<tr>
+<td height="30">&nbsp;Evaluación de Reemplazo</td>
+<td>:</td>
+<td>&nbsp;Evaluación sustitutoria que reemplazará a otra. </td>
+</tr>
+</tbody>
+</table>
+</div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-success" data-mdb-dismiss="modal">Cerrar</button>
+        </div>
+    </div>
+    </div>
+  </div>
+  <div class="modal fade" id=modalWindowCronograma2 tabindex=-1 aria-labelledby=modalWindowLabel data-mdb-backdrop=static
+    data-mdb-keyboard=false aria-hidden=true>
+    <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="modalWindowLabel">Cronograma del Curso: Expresión Arquitectónica II 02</h5>
+            <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body px-4">
+
+
+
+
+
+
+
+<table class="table table-hover">
+<thead>
+<tr>
+<th width="60" height="30">&nbsp;Prefijo</th>
+<th width="170">&nbsp;Evaluación</th>
+<th width="170">&nbsp;Fecha Evaluación</th>
+<th width="170">&nbsp;Posible Eliminación</th>
+<th width="170">&nbsp;Evaluación Reemplazo</th>
+</tr>
+</thead>
+
+
+<tbody><tr>
+    <td height="30">LAM1</td>
+    <td>Lamina</td>
+    <td>10/09/2024</td>
+    <td>N</td>
+    <td>Ninguna</td>
+</tr>     
+
+<tr>
+    <td height="30">LAM2</td>
+    <td>Lamina</td>
+    <td>10/09/2024</td>
+    <td>N</td>
+    <td>Ninguna</td>
+</tr>     
+
+<tr>
+    <td height="30">INF1</td>
+    <td>Informe Final</td>
+    <td>10/09/2024</td>
+    <td>N</td>
+    <td>Ninguna</td>
+</tr>     
+
+
+</tbody></table>
+
+<div class="px-2">
+<h7><b>Fórmula:</b></h7><br>
+<h7 class="px-3">(LAM1+LAM2*2+INF1*4)/7</h7>
+</div>
+
+<div class="px-2">
+<h7><b>Leyenda:</b></h7>
+</div>
+<table class="table table-borderless table-sm ">
+<tbody>
+<tr>
+<td width="20%" height="30">&nbsp;Nº Eval a eliminar</td>
+<td>:</td>
+<td width="80%">&nbsp;Número de evaluaciones del mismo tipo que se eliminarán</td>
+</tr>
+<tr>
+<td height="30">&nbsp;Posible Eliminación</td>
+<td>:</td>
+<td>&nbsp;(S) Indica la ubicación de las evaluaciones posibles a eliminarse.
+</td>
+</tr>
+<tr>
+<td height="30">&nbsp;Evaluación de Reemplazo</td>
+<td>:</td>
+<td>&nbsp;Evaluación sustitutoria que reemplazará a otra. </td>
+</tr>
+</tbody>
+</table>
+</div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-success" data-mdb-dismiss="modal">Cerrar</button>
+        </div>
+    </div>
+    </div>
+  </div>
+  <div class="modal fade" id=modalWindowCronograma3 tabindex=-1 aria-labelledby=modalWindowLabel data-mdb-backdrop=static
+    data-mdb-keyboard=false aria-hidden=true>
+    <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="modalWindowLabel">Cronograma del Curso: Estructuras I 04</h5>
+            <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body px-4">
+
+
+
+
+
+
+
+<table class="table table-hover">
+<thead>
+<tr>
+<th width="60" height="30">&nbsp;Prefijo</th>
+<th width="170">&nbsp;Evaluación</th>
+<th width="170">&nbsp;Fecha Evaluación</th>
+<th width="170">&nbsp;Posible Eliminación</th>
+<th width="170">&nbsp;Evaluación Reemplazo</th>
+</tr>
+</thead>
+
+
+<tbody><tr>
+    <td height="30">PYT1</td>
+    <td>Proyecto Taller</td>
+    <td>08/03/2024</td>
+    <td>N</td>
+    <td>Ninguna</td>
+</tr>     
+
+<tr>
+    <td height="30">PYT2</td>
+    <td>Proyecto Taller</td>
+    <td>08/03/2024</td>
+    <td>N</td>
+    <td>Ninguna</td>
+</tr>     
+
+<tr>
+    <td height="30">PYT3</td>
+    <td>Proyecto Taller</td>
+    <td>08/03/2024</td>
+    <td>N</td>
+    <td>Ninguna</td>
+</tr>     
+
+<tr>
+    <td height="30">PYF1</td>
+    <td>Proyecto Final</td>
+    <td>08/03/2024</td>
+    <td>N</td>
+    <td>Ninguna</td>
+</tr>     
+
+
+</tbody></table>
+
+<div class="px-2">
+<h7><b>Fórmula:</b></h7><br>
+<h7 class="px-3">(PYT1+PYT2+PYT3+PYF1)/4</h7>
+</div>
+
+<div class="px-2">
+<h7><b>Leyenda:</b></h7>
+</div>
+<table class="table table-borderless table-sm ">
+<tbody>
+<tr>
+<td width="20%" height="30">&nbsp;Nº Eval a eliminar</td>
+<td>:</td>
+<td width="80%">&nbsp;Número de evaluaciones del mismo tipo que se eliminarán</td>
+</tr>
+<tr>
+<td height="30">&nbsp;Posible Eliminación</td>
+<td>:</td>
+<td>&nbsp;(S) Indica la ubicación de las evaluaciones posibles a eliminarse.
+</td>
+</tr>
+<tr>
+<td height="30">&nbsp;Evaluación de Reemplazo</td>
+<td>:</td>
+<td>&nbsp;Evaluación sustitutoria que reemplazará a otra. </td>
+</tr>
+</tbody>
+</table>
+</div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-success" data-mdb-dismiss="modal">Cerrar</button>
+        </div>
+    </div>
+    </div>
+  </div>
+  <div class="modal fade" id=modalWindowCronograma4 tabindex=-1 aria-labelledby=modalWindowLabel data-mdb-backdrop=static
+    data-mdb-keyboard=false aria-hidden=true>
+    <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="modalWindowLabel">Cronograma del Curso: Edificación I 04</h5>
+            <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body px-4">
+
+
+
+
+
+
+
+<table class="table table-hover">
+<thead>
+<tr>
+<th width="60" height="30">&nbsp;Prefijo</th>
+<th width="170">&nbsp;Evaluación</th>
+<th width="170">&nbsp;Fecha Evaluación</th>
+<th width="170">&nbsp;Posible Eliminación</th>
+<th width="170">&nbsp;Evaluación Reemplazo</th>
+</tr>
+</thead>
+
+
+<tbody><tr>
+    <td height="30">TRA1</td>
+    <td>Trabajo de Investigación</td>
+    <td>23/04/2024</td>
+    <td>N</td>
+    <td>Ninguna</td>
+</tr>     
+
+<tr>
+    <td height="30">PRA1</td>
+    <td>Práctica</td>
+    <td>04/05/2024</td>
+    <td>N</td>
+    <td>Ninguna</td>
+</tr>     
+
+<tr>
+    <td height="30">PRA2</td>
+    <td>Práctica</td>
+    <td>18/05/2024</td>
+    <td>N</td>
+    <td>Ninguna</td>
+</tr>     
+
+<tr>
+    <td height="30">PRA3</td>
+    <td>Práctica</td>
+    <td>08/06/2024</td>
+    <td>N</td>
+    <td>Ninguna</td>
+</tr>     
+
+<tr>
+    <td height="30">PRA4</td>
+    <td>Práctica</td>
+    <td>06/07/2024</td>
+    <td>N</td>
+    <td>Ninguna</td>
+</tr>     
+
+<tr>
+    <td height="30">PRA5</td>
+    <td>Práctica</td>
+    <td>13/07/2024</td>
+    <td>N</td>
+    <td>Ninguna</td>
+</tr>     
+
+<tr>
+    <td height="30">SUS1</td>
+    <td>Sustitutorio</td>
+    <td>20/07/2024</td>
+    <td>N</td>
+    <td>Ninguna</td>
+</tr>     
+
+
+</tbody></table>
+
+<div class="px-2">
+<h7><b>Fórmula:</b></h7><br>
+<h7 class="px-3">(TRA1+PRA1+PRA2*3+PRA3+PRA4+PRA5*3)/10</h7>
+</div>
+
+<div class="px-2">
+<h7><b>Leyenda:</b></h7>
+</div>
+<table class="table table-borderless table-sm ">
+<tbody>
+<tr>
+<td width="20%" height="30">&nbsp;Nº Eval a eliminar</td>
+<td>:</td>
+<td width="80%">&nbsp;Número de evaluaciones del mismo tipo que se eliminarán</td>
+</tr>
+<tr>
+<td height="30">&nbsp;Posible Eliminación</td>
+<td>:</td>
+<td>&nbsp;(S) Indica la ubicación de las evaluaciones posibles a eliminarse.
+</td>
+</tr>
+<tr>
+<td height="30">&nbsp;Evaluación de Reemplazo</td>
+<td>:</td>
+<td>&nbsp;Evaluación sustitutoria que reemplazará a otra. </td>
+</tr>
+</tbody>
+</table>
+</div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-success" data-mdb-dismiss="modal">Cerrar</button>
+        </div>
+    </div>
+    </div>
+  </div>
+  <div class="modal fade" id=modalWindowCronograma5 tabindex=-1 aria-labelledby=modalWindowLabel data-mdb-backdrop=static
+    data-mdb-keyboard=false aria-hidden=true>
+    <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="modalWindowLabel">Cronograma del Curso: Urbanismo I 03</h5>
+            <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body px-4">
+
+
+
+
+
+
+
+<table class="table table-hover">
+<thead>
+<tr>
+<th width="60" height="30">&nbsp;Prefijo</th>
+<th width="170">&nbsp;Evaluación</th>
+<th width="170">&nbsp;Fecha Evaluación</th>
+<th width="170">&nbsp;Posible Eliminación</th>
+<th width="170">&nbsp;Evaluación Reemplazo</th>
+</tr>
+</thead>
+
+
+<tbody><tr>
+    <td height="30">TRP1</td>
+    <td>Trabajo Práctico</td>
+    <td>19/04/2024</td>
+    <td>N</td>
+    <td>Ninguna</td>
+</tr>     
+
+<tr>
+    <td height="30">PAR1</td>
+    <td>Parcial</td>
+    <td>01/05/2024</td>
+    <td>N</td>
+    <td>Ninguna</td>
+</tr>     
+
+<tr>
+    <td height="30">TRP2</td>
+    <td>Trabajo Práctico</td>
+    <td>06/05/2024</td>
+    <td>N</td>
+    <td>Ninguna</td>
+</tr>     
+
+<tr>
+    <td height="30">TRP3</td>
+    <td>Trabajo Práctico</td>
+    <td>10/06/2024</td>
+    <td>N</td>
+    <td>Ninguna</td>
+</tr>     
+
+<tr>
+    <td height="30">TRP4</td>
+    <td>Trabajo Práctico</td>
+    <td>28/06/2024</td>
+    <td>N</td>
+    <td>Ninguna</td>
+</tr>     
+
+<tr>
+    <td height="30">FIN1</td>
+    <td>Final</td>
+    <td>01/07/2024</td>
+    <td>N</td>
+    <td>Ninguna</td>
+</tr>     
+
+<tr>
+    <td height="30">NPA1</td>
+    <td>Nota Participación</td>
+    <td>01/07/2024</td>
+    <td>N</td>
+    <td>Ninguna</td>
+</tr>     
+
+
+</tbody></table>
+
+<div class="px-2">
+<h7><b>Fórmula:</b></h7><br>
+<h7 class="px-3">((TRP1*1)+(TRP2*2)+(PAR1*3)+(TRP3*1)+(TRP4*2)+(FIN1*3)+(NPA1*1))/13</h7>
+</div>
+
+<div class="px-2">
+<h7><b>Leyenda:</b></h7>
+</div>
+<table class="table table-borderless table-sm ">
+<tbody>
+<tr>
+<td width="20%" height="30">&nbsp;Nº Eval a eliminar</td>
+<td>:</td>
+<td width="80%">&nbsp;Número de evaluaciones del mismo tipo que se eliminarán</td>
+</tr>
+<tr>
+<td height="30">&nbsp;Posible Eliminación</td>
+<td>:</td>
+<td>&nbsp;(S) Indica la ubicación de las evaluaciones posibles a eliminarse.
+</td>
+</tr>
+<tr>
+<td height="30">&nbsp;Evaluación de Reemplazo</td>
+<td>:</td>
+<td>&nbsp;Evaluación sustitutoria que reemplazará a otra. </td>
+</tr>
+</tbody>
+</table>
+</div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-success" data-mdb-dismiss="modal">Cerrar</button>
+        </div>
+    </div>
+    </div>
+  </div>
+  <script>
+    $(document).ready(function () {
+        // Datos simulados de cursos
+        const cursosData = {
+            "20242": [  // Semestre 2024-2
+                { codigo: "AR-0312", carrera: "Arquitectura", curriculo: "52", nombre: "Diseño Arquitectónico III Integral", grupo: "07" },
+                { codigo: "AR-0322", carrera: "Arquitectura", curriculo: "52", nombre: "Expresión Arquitectónica II", grupo: "02" }
+            ],
+            "20241": [  // Semestre 2024-1
+                { codigo: "AR-0312", carrera: "Arquitectura", curriculo: "52", nombre: "Diseño Arquitectónico III Integral", grupo: "10" },
+                { codigo: "AR-0322", carrera: "Arquitectura", curriculo: "52", nombre: "Expresión Arquitectónica II", grupo: "01" },
+                { codigo: "AR-0432", carrera: "Arquitectura", curriculo: "52", nombre: "Estructuras I", grupo: "04" },
+                { codigo: "AR-0433", carrera: "Arquitectura", curriculo: "52", nombre: "Edificación I", grupo: "04" },
+                { codigo: "AR-0451", carrera: "Arquitectura", curriculo: "52", nombre: "Urbanismo I", grupo: "03" }
+            ]
+        };
+
+        // Llamada inicial para cargar los cursos del semestre 2024-2
+        cargarCursos("20242");
+
+        // Evento al cambiar el semestre
+        $(".cmb-semestre").change(function () {
+            var semestre = $(this).val();
+            cargarCursos(semestre);
+        });
+
+        // Función para cargar los cursos de acuerdo al semestre seleccionado
+        function cargarCursos(semestre) {
+            // Limpiar el tbody
+            $("#tbodyCursos").html("");
+
+            // Obtener los cursos del semestre seleccionado
+            var cursos = cursosData[semestre];
+
+            // Recorrer los cursos y agregarlos a la tabla
+            cursos.forEach(function (curso) {
+                var row = `
+                    <tr>
+                        <td>${curso.codigo}</td>
+                        <td>${curso.carrera}</td>
+                        <td>${curso.curriculo}</td>
+                        <td class="style23">${curso.nombre}</td>
+                        <td>${curso.grupo}</td>
+                        <td class="style23">
+                            <div style="display:flex">
+                                <div class="btn btn-sm btn-success btn-notas" data="${curso.codigo}" grupo="${curso.grupo}" datatitle="${curso.nombre}">
+                                    Nota
+                                </div>
+                                <div class="btn btn-sm btn-outline-secondary mx-2 btn-cronograma" data="${curso.codigo}" grupo="${curso.grupo}" datatitle="${curso.nombre}">
+                                    Cronograma
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                `;
+                // Insertar la fila en la tabla
+                $("#tbodyCursos").append(row);
+            });
+
+            // Asignar funciones a los botones de cada curso cargado
+            $(".btn-notas").off('click').on('click', function () {
+                cargarDatos(this, "nota");
+            });
+
+            $(".btn-cronograma").off('click').on('click', function () {
+                cargarDatos(this, "cronograma");
+            });
+        }
+
+        // Función para cargar contenido según tipo (Nota o Cronograma)
+        function cargarDatos(el, tipo) {
+            var codcurs = $(el).attr("data");
+            var grupo = $(el).attr("grupo");
+            var title = $(el).attr("datatitle");
+
+            if (tipo === "nota") {
+                // Cargar las notas para el curso y grupo seleccionados
+                if (codcurs === "AR-0312" && grupo === "07") {
+                    $("#modalWindow1").modal("show");
+                    $('#modalWindowLabel').html("Nota del Curso: " + title);
+                    $('#modalContent').html("Aquí va la nota del curso " + title + " del grupo " + grupo + " con código " + codcurs);
+                } else if (codcurs === "AR-0322" && grupo === "02") {
+                    $("#modalWindow2").modal("show");
+                    $('#modalWindowLabel').html("Nota del Curso: " + title);
+                    $('#modalContent').html("Aquí va la nota del curso " + title + " del grupo " + grupo + " con código " + codcurs);
+                } else if (codcurs === "AR-0312" && grupo === "10") {
+                    $("#modalWindow3").modal("show");
+                    $('#modalWindowLabel').html("Nota del Curso: " + title);
+                    $('#modalContent').html("Aquí va la nota del curso " + title + " del grupo " + grupo + " con código " + codcurs);
+                } else if (codcurs === "AR-0312" && grupo === "01") {
+                    $("#modalWindow4").modal("show");
+                    $('#modalWindowLabel').html("Nota del Curso: " + title);
+                    $('#modalContent').html("Aquí va la nota del curso " + title + " del grupo " + grupo + " con código " + codcurs);
+                } else if (codcurs === "AR-0432") {
+                    $("#modalWindow5").modal("show");
+                    $('#modalWindowLabel').html("Nota del Curso: " + title);
+                    $('#modalContent').html("Aquí va la nota del curso " + title + " del grupo " + grupo + " con código " + codcurs);
+                } else if (codcurs === "AR-0433") {
+                    $("#modalWindow6").modal("show");
+                    $('#modalWindowLabel').html("Nota del Curso: " + title);
+                    $('#modalContent').html("Aquí va la nota del curso " + title + " del grupo " + grupo + " con código " + codcurs);
+                } else {
+                    $("#modalWindow6").modal("show");
+                    $('#modalWindowLabel').html("Nota del Curso: " + title);
+                    $('#modalContent').html("Aquí va la nota del curso " + title + " del grupo " + grupo + " con código " + codcurs);
+                }
+            } else {
+                // Cargar el cronograma para el curso y grupo seleccionados
+                if (codcurs === "AR-0312" && grupo === "07") {
+                    $("#modalWindowCronograma1").modal("show");
+                    $('#modalWindowLabel').html("Cronograma del Curso: " + title);
+                    $('#modalContent').html("Aquí va el cronograma del curso " + title + " del grupo " + grupo + " con código " + codcurs);
+                } else if (codcurs === "AR-0322" && grupo === "02") {
+                    $("#modalWindowCronograma2").modal("show");
+                    $('#modalWindowLabel').html("Cronograma del Curso: " + title);
+                    $('#modalContent').html("Aquí va el cronograma del curso " + title + " del grupo " + grupo + " con código " + codcurs);
+                } else if (codcurs === "AR-0312" && grupo === "10") {
+                    $("#modalWindowCronograma1").modal("show");
+                    $('#modalWindowLabel').html("Cronograma del Curso: " + title);
+                    $('#modalContent').html("Aquí va el cronograma del curso " + title + " del grupo " + grupo + " con código " + codcurs);
+                } else if (codcurs === "AR-0312" && grupo === "01") {
+                    $("#modalWindowCronograma2").modal("show");
+                    $('#modalWindowLabel').html("Cronograma del Curso: " + title);
+                    $('#modalContent').html("Aquí va el cronograma del curso " + title + " del grupo " + grupo + " con código " + codcurs);
+                } else if (codcurs === "AR-0432") {
+                    $("#modalWindowCronograma3").modal("show");
+                    $('#modalWindowLabel').html("Cronograma del Curso: " + title);
+                    $('#modalContent').html("Aquí va el cronograma del curso " + title + " del grupo " + grupo + " con código " + codcurs);
+                } else if (codcurs === "AR-0433") {
+                    $("#modalWindowCronograma4").modal("show");
+                    $('#modalWindowLabel').html("Cronograma del Curso: " + title);
+                    $('#modalContent').html("Aquí va el cronograma del curso " + title + " del grupo " + grupo + " con código " + codcurs);
+                } else {
+                    $("#modalWindowCronograma5").modal("show");
+                    $('#modalWindowLabel').html("Cronograma del Curso: " + title);
+                    $('#modalContent').html("Aquí va el cronograma del curso " + title + " del grupo " + grupo + " con código " + codcurs);
+                }
+            }
+        }
+    });
+</script>
+
+</body>
